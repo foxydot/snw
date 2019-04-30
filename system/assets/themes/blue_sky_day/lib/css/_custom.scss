@@ -1,0 +1,50 @@
+.entry-subtitle{
+  font-size: 1.8em;
+  color: $white;
+  text-shadow: 0 0 0.5em $dkgrey;
+}
+
+.symple-tabs{
+  .ui-tabs-nav{
+    li.ui-tabs-active a{
+      background-color: $green;
+      color: $white !important;
+    }
+  }
+}
+
+///TEMPLATES///
+
+.site-inner{}
+.page-template-coming-soon{
+  main.content{
+    margin-top: 2em;
+    article{
+      padding-top: 0;
+      .entry-header{
+        text-align: center;
+      }
+    }
+  }
+  .sidebar.sidebar-primary{
+    .manual-sidebar{
+      margin-top: 2em;
+      @include sansserif(1.2);
+      .sidebarcontent{}
+      .sidebarintro{
+        font-size: 1.2em;
+        font-weight: 300;
+        line-height: 1.4;
+      }
+      h4{
+        font-size: 1.2em;
+        color: $orange;
+        text-transform: uppercase;
+      }
+      h5{
+        @include sansserif(1);
+        font-weight: 700;
+      }
+    }
+  }
+}
