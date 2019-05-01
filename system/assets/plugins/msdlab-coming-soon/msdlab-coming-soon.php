@@ -58,8 +58,6 @@ class MSDLabComingSoon
         $msg = $this->queries->set_option_data($form_id);
         if(is_string($msg)){
             print '<div class="updated notice notice-success is-dismissible">'.$msg.'</div>';
-        } else {
-            ts_data($msg);
         }
         $ret = array();
         $ret['header'] = $this->form->form_header($form_id);

@@ -41,25 +41,30 @@ class MSDLabClientCustom
         require_once(plugin_dir_path(__FILE__) . 'lib/inc/_media.php');
         require_once(plugin_dir_path(__FILE__) . 'lib/inc/_shortcodes.php');
         require_once(plugin_dir_path(__FILE__) . 'lib/inc/_utility.php');
-        require_once(plugin_dir_path(__FILE__) . 'lib/inc/_widgets.php');
-        require_once(plugin_dir_path(__FILE__) . 'lib/inc/news_cpt.php');
-        if(class_exists('MSDNewsCPT')){
-            $this->news_class = new MSDNewsCPT();
-        }
-        require_once(plugin_dir_path(__FILE__) . 'lib/inc/team_cpt.php');
-        if(class_exists('MSDTeamCPT')){
-            $this->team_class = new MSDTeamCPT();
-        }
+	    require_once(plugin_dir_path(__FILE__) . 'lib/inc/_widgets.php');
+
         require_once(plugin_dir_path(__FILE__) . 'lib/inc/sectioned-pages.php');
         if(class_exists('MSDSectionedPage')){
             $this->section_class = new MSDSectionedPage();
         }
+	    add_action('admin_menu', array(&$this,'move_admin_menu_items'));
+        }
 
-
-        register_activation_hook( __FILE__, create_function('','flush_rewrite_rules();') );
-        register_deactivation_hook( __FILE__, create_function('','flush_rewrite_rules();') );
-    }
-
+	function move_admin_menu_items() {
+		global $menu;
+		foreach ( $menu as $key => $value ) {
+			if ( 'edit-comments.php' == $value[2] ) {
+				$oldkey = $key;
+			}
+			if ( 'edit.php?post_type=cookielawinfo' == $value[2] ) {
+				$oldkey = $key;
+			}
+		}
+		$newkey = 50; // use whatever index gets you the position you want
+		// if this key is in use you will write over a menu item!
+		$menu[$newkey]=$menu[$oldkey];
+		$menu[$oldkey]=array();
+	}
 }
 //instantiate
 $msd_custom = new MSDLabClientCustom();

@@ -83,3 +83,9 @@ function ts_var($var){
 	ts_data(var_export( $var , true ));
 }
 endif;
+
+add_filter('relevanssi_pre_excerpt_content', 'rlv_shortcode_blaster');
+function rlv_shortcode_blaster($content) {
+    $content = preg_replace('/\[.*?\]/s', '', $content);
+    return $content;
+}
