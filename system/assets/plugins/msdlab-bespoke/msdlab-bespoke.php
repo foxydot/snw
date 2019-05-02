@@ -47,6 +47,10 @@ class MSDLabClientCustom
         if(class_exists('MSDSectionedPage')){
             $this->section_class = new MSDSectionedPage();
         }
+        require_once(plugin_dir_path(__FILE__) . 'lib/inc/news_cpt.php');
+        if(class_exists('MSDNewsCPT')){
+            $this->news_class = new MSDNewsCPT();
+        }
 	    add_action('admin_menu', array(&$this,'move_admin_menu_items'));
         }
 
