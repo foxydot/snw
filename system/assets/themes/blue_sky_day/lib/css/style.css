@@ -1575,6 +1575,7 @@ p.entry-meta {
   margin-bottom: 0; }
 
 .sectioned-page-wrapper {
+  margin-top: 1em;
   position: relative;
   z-index: 10;
   text-align: left; }
@@ -1585,7 +1586,8 @@ p.entry-meta {
     .sectioned-page-wrapper .section .section-title {
       margin-bottom: 4em; }
       .sectioned-page-wrapper .section .section-title h3 {
-        taxt-align: center; }
+        font-size: 2em;
+        text-align: center; }
     .sectioned-page-wrapper .section .section-body .wrap {
       padding: 2rem 0; }
       .sectioned-page-wrapper .section .section-body .wrap a, .sectioned-page-wrapper .section .section-body .wrap a:link, .sectioned-page-wrapper .section .section-body .wrap a:visited {
