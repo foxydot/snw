@@ -80,8 +80,8 @@
     }
     .gform_body {
       li.gfield {
-        background: $white;
-        margin-bottom: 0.5em;
+        margin-top: 0;
+        margin-bottom: 0;
         label {
           padding: 0 1em;
           font-size: 0.7em;
@@ -109,15 +109,17 @@
   .sidebar{
     .gform_wrapper {
       .gform_body {
-        li.gfield {
-          background: rgb(234, 243, 251);
-          .ginput_container {
-            input, textarea {
-              background: rgba(234,243,251,0);
+        ul {
+          li.gfield {
+            margin-bottom: 0;
+            .ginput_container {
+              input, textarea {
+                background: rgba(234, 243, 251, 0.6);
+              }
             }
-          }
-          &.white {
-            background: none;
+            &.white {
+              background: none;
+            }
           }
         }
       }
