@@ -1585,7 +1585,7 @@ p.entry-meta {
     .sectioned-page-wrapper .section .section-title {
       margin-bottom: 4em; }
       .sectioned-page-wrapper .section .section-title h3 {
-        text-transform: uppercase; }
+        taxt-align: center; }
     .sectioned-page-wrapper .section .section-body .wrap {
       padding: 2rem 0; }
       .sectioned-page-wrapper .section .section-body .wrap a, .sectioned-page-wrapper .section .section-body .wrap a:link, .sectioned-page-wrapper .section .section-body .wrap a:visited {
@@ -1620,51 +1620,6 @@ p.entry-meta {
       font-weight: 300;
       line-height: 1.4;
       text-align: center; }
-  .sectioned-page-wrapper .section.gray-callout {
-    margin-bottom: 1em; }
-    .sectioned-page-wrapper .section.gray-callout .section-body .container {
-      background-image: url(../images/graywave.svg);
-      background-position: 50%;
-      background-size: auto 100%;
-      background-repeat: repeat;
-      color: #FFF;
-      font-weight: 400;
-      padding: 1em 2em;
-      font-size: 2em; }
-      .sectioned-page-wrapper .section.gray-callout .section-body .container p {
-        margin: 0; }
-  .sectioned-page-wrapper .section.green-callout {
-    margin-bottom: 1em; }
-    .sectioned-page-wrapper .section.green-callout .section-body {
-      background-color: #2EA645;
-      color: #FFF; }
-      .sectioned-page-wrapper .section.green-callout .section-body .container {
-        font-weight: 800;
-        padding: 1em 2em;
-        font-size: 2em; }
-        .sectioned-page-wrapper .section.green-callout .section-body .container p {
-          margin: 0; }
-  .sectioned-page-wrapper .section.orange-bang .section-body .container p.first-child:before {
-    border-radius: 50%;
-    background-color: #f90;
-    color: #FFF;
-    content: '!';
-    min-width: 1.7em;
-    margin-right: 0.5em;
-    display: inline-block;
-    font-weight: 800;
-    font-size: 1.5em;
-    text-align: center; }
-  .sectioned-page-wrapper .section.black-bang .section-body .container p.first-child:before {
-    background-color: #000;
-    color: #FFF;
-    content: '!';
-    min-width: 1.7em;
-    margin-right: 0.5em;
-    display: inline-block;
-    font-weight: 800;
-    font-size: 1.5em;
-    text-align: center; }
   .sectioned-page-wrapper .section.overlay {
     padding: 0; }
     .sectioned-page-wrapper .section.overlay .overlay {
@@ -1677,8 +1632,10 @@ p.entry-meta {
     background-color: #CCC; }
   .sectioned-page-wrapper .section.bkg-green {
     background-color: #2EA645; }
-  .sectioned-page-wrapper .section.bkg-white {
+  .sectioned-page-wrapper .section.bkg-offwhite {
     background-color: #FCFCFC; }
+  .sectioned-page-wrapper .section.bkg-white {
+    background-color: #FFF; }
   .sectioned-page-wrapper .section.text-dkgrey {
     color: #172854; }
   .sectioned-page-wrapper .section.text-green {

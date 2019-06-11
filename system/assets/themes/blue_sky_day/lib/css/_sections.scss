@@ -9,7 +9,7 @@
     .section-title{
       margin-bottom: 4em;
       h3 {
-        text-transform: uppercase;
+        taxt-align: center;
       }
     }
     .section-body{
@@ -55,70 +55,6 @@
       text-align: center;
     }
   }
-  .section.gray-callout{
-    margin-bottom: 1em;
-    .section-body .container{
-      background-image: url(../images/graywave.svg);
-      background-position: 50%;
-      background-size: auto 100%;
-      background-repeat: repeat;
-      color: $white;
-      font-weight: 400;
-      padding: 1em 2em;
-      font-size: 2em;
-      p{
-        margin: 0;
-      }
-    }
-  }
-  .section.green-callout{
-    margin-bottom: 1em;
-    .section-body{
-      background-color: $green;
-      color: $white;
-      .container {
-        font-weight: 800;
-        padding: 1em 2em;
-        font-size: 2em;
-        p {
-          margin: 0;
-        }
-      }
-    }
-  }
-  .section.orange-bang{
-    .section-body .container{
-      p.first-child:before{
-          border-radius: 50%;
-          background-color: $orange;
-          color: $white;
-          content: '!';
-          min-width: 1.7em;
-          margin-right: 0.5em;
-          display: inline-block;
-          font-weight: 800;
-          font-size: 1.5em;
-          text-align: center;
-
-      }
-    }
-  }
-  .section.black-bang{
-    .section-body .container{
-      p.first-child:before{
-        background-color: $black;
-        color: $white;
-        content: '!';
-        min-width: 1.7em;
-        margin-right: 0.5em;
-        display: inline-block;
-        font-weight: 800;
-        font-size: 1.5em;
-        text-align: center;
-
-      }
-    }
-  }
   .section.overlay{
     padding: 0;
     .overlay{
@@ -136,8 +72,11 @@
   .section.bkg-green{
     background-color: $green;
   }
-  .section.bkg-white{
+  .section.bkg-offwhite{
     background-color: $offwhite;
+  }
+  .section.bkg-white{
+    background-color: $white;
   }
   .section.text-dkgrey{
     color: $dkgrey;

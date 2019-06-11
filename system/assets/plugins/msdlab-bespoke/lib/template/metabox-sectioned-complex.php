@@ -50,15 +50,14 @@ column-gap: 1em;">
                     'Dark grey background' => 'bkg-dkgrey',
                     'Light grey background' => 'bkg-ltgrey',
                     'Offwhite background' => 'bkg-offwhite',
+                    'White background' => 'bkg-white',
                     'Green background' => 'bkg-green',
                     'Navy background' => 'bkg-dkblue',
-                    'Diamond backgrond' => 'bkg-diamond',
                     'Dark grey text' => 'text-dkgrey',
                     'Navy text' => 'text-dkblue',
                     'White text' => 'text-white',
                     'Red Button' => 'btn-red',
-                    'White Button' => 'btn-white',
-                    'Center titles' => 'cntr-titles',); ?>
+                    'White Button' => 'btn-white',); ?>
                 <?php foreach ($items as $i => $item): ?>
                     <?php $mb->the_field('css-classes', WPALCHEMY_FIELD_HINT_CHECKBOX_MULTI); ?>
                     <input type="checkbox" name="<?php $mb->the_name(); ?>" value="<?php echo $item; ?>"<?php $mb->the_checkbox_state($item); ?>/> <?php echo $i; ?><br/>
