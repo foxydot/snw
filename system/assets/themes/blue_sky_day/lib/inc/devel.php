@@ -25,6 +25,6 @@ if(!function_exists('my_msdlab_trace_actions')) {
     {
         global $wp_filter;
         global $allowedposttags;
-        ts_var($wp_filter['genesis_after_content_sidebar_wrap']);
+        ts_var($wp_filter['genesis_footer']);
     }
 }

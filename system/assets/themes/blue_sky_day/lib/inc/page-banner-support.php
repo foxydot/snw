@@ -75,9 +75,7 @@ if (!class_exists('MSDLab_Page_Banner_Support')) {
                     return;
                 }
                 $bannerclass = $page_banner_metabox->get_the_value('bannerclass');
-                $banneralign = $page_banner_metabox->get_the_value('banneralign');
                 $bannerimage = $page_banner_metabox->get_the_value('bannerimage');
-                $bannercontent = apply_filters('the_content', $page_banner_metabox->get_the_value('bannercontent'));
                 remove_action('genesis_entry_header', 'genesis_do_post_title');
                 $background = '';
                 if(strlen($bannerimage) > 0){
@@ -85,33 +83,16 @@ if (!class_exists('MSDLab_Page_Banner_Support')) {
                     $bannerclass .= ' has-background';
                 }
 
-                if($template_file == 'landing-page.php'){
-                    print '<div class="banner clearfix ' . $banneralign . ' ' . $bannerclass . '">';
-                    print '<div class="wrap"' . $background . '>';
-                    print '<div class="gradient">';
-                    print '<div class="bannertext">';
-                    print genesis_do_post_title();
-                    if ($bannercontent != '') {
-                        print '<div class="bannercontent">' . $bannercontent . '</div>';
-                    }
-                    print '</div>';
-                    print '</div>';
-                    print '</div>';
-                    print '</div>';
-                } else {
-                    print '<div class="banner clearfix container' . $banneralign . ' ' . $bannerclass . '">';
-                    print '<div class="wrap col-xs-12"' . $background . '>';
-                    print '<div class="gradient">';
-                    print '<div class="bannertext">';
-                    print genesis_do_post_title();
-                    if ($bannercontent != '') {
-                        print '<div class="bannercontent">' . $bannercontent . '</div>';
-                    }
-                    print '</div>';
-                    print '</div>';
-                    print '</div>';
-                    print '</div>';
-                }
+                print '<div class="banner clearfix ' . $bannerclass . '">';
+                print '<div class="wrap col-xs-12"' . $background . '>';
+                print '<div class="gradient">';
+                print '<div class="bannertext container">';
+                print genesis_do_post_title();
+                print '</div>';
+                print '</div>';
+                print '</div>';
+                print '</div>';
+
             } elseif(is_home() || (is_archive() && $post->post_type == "post") || (is_single() && $post->post_type == "post") ) {
                 global $page_banner_metabox;
                 $page_banner_metabox->the_meta($blog_id);
@@ -132,14 +113,11 @@ if (!class_exists('MSDLab_Page_Banner_Support')) {
                 remove_action('genesis_before_loop', 'genesis_do_author_box_archive', 15);
                 add_filter('genesis_post_title_text', array(&$this, 'msdlab_blog_page_title'));
                 $background = strlen($bannerimage) > 0 ? ' style="background-image:url(' . $bannerimage . ')"' : '';
-                print '<div class="banner clearfix ' . $banneralign . ' ' . $bannerclass . '">';
+                print '<div class="banner clearfix ' . $bannerclass . '">';
                 print '<div class="wrap bkg"' . $background . '>';
                 print '<div class="gradient">';
-                print '<div class="bannertext">';
+                print '<div class="bannertext container">';
                 print genesis_do_post_title();
-                if($bannercontent != '') {
-                    print '<div class="bannercontent">' . $bannercontent . '</div>';
-                }
                 print '</div>';
                 print '</div>';
                 print '</div>';

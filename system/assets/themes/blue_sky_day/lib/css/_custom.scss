@@ -4,13 +4,14 @@
   text-shadow: 0 0 0.5em $dkgrey;
 }
 
-.symple-tabs{
-  .ui-tabs-nav{
-    li.ui-tabs-active a{
-      background-color: $green;
-      color: $white !important;
-    }
-  }
+.no-main main.content {
+  display: none; }
+
+.no-title .page-title-area {
+  display: none; }
+
+.content-sidebar-wrap{
+  background: rgba($white,0.6);
 }
 
 ///TEMPLATES///
@@ -38,7 +39,7 @@
       }
       h4{
         font-size: 1.2em;
-        color: $orange;
+        color: $blue;
         text-transform: uppercase;
       }
       h5{
@@ -48,3 +49,4 @@
     }
   }
 }
+

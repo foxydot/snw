@@ -42,7 +42,10 @@ class MSDLabClientCustom
         require_once(plugin_dir_path(__FILE__) . 'lib/inc/_shortcodes.php');
         require_once(plugin_dir_path(__FILE__) . 'lib/inc/_utility.php');
 	    require_once(plugin_dir_path(__FILE__) . 'lib/inc/_widgets.php');
-
+        require_once(plugin_dir_path(__FILE__) . 'lib/inc/custom-class-support.php');
+        if(class_exists('MSDLab_Custom_Class_Support')){
+            $this->section_class = new MSDLab_Custom_Class_Support();
+        }
         require_once(plugin_dir_path(__FILE__) . 'lib/inc/sectioned-pages.php');
         if(class_exists('MSDSectionedPage')){
             $this->section_class = new MSDSectionedPage();

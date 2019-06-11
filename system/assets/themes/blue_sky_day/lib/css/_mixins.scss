@@ -30,8 +30,8 @@
 }
 
 /* Colors */
-$red: #f00;
-$linkred: #b1536f;
+$red: rgb(168,77,80);
+$linkred: $red;
 $orange: #f90;
 $yellow: #ff0;
 $green: #2EA645;
@@ -62,20 +62,20 @@ $white: #FFF;
 $offwhite: #FCFCFC;
 $ltgrey: #CCC;
 $medgrey: #999;
-$dkgrey: #2A2B30;
+$dkgrey: rgb(23,40,84);
 $black: #000;
 
 /* Default Colors */
 $body_bkg: $white;
 $body_txt: $dkgrey;
-$link: $green;
-$link_hvr: $green;
+$link: $red;
+$link_hvr: $dkred;
 $border: $ltgrey;
 $input_bkg: $offwhite;
 $input_border: $ltgrey;
-$btn_bkg: $orange;
+$btn_bkg: $blue;
 $btn_txt: $offwhite;
-$btn_hvr_bkg: $ltgreen;
+$btn_hvr_bkg: $dkblue;
 $btn_hvr_txt: $offwhite;
 $btn_dis_bkg: $ltgrey;
 $btn_dis_txt: $medgrey;

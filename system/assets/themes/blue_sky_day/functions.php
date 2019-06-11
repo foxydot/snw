@@ -130,7 +130,7 @@ add_action('genesis_header', 'genesis_do_breadcrumbs', 11); //to outside of the 
 add_action('genesis_after_header','msdlab_do_title_area');
 
 remove_action('genesis_entry_content', 'genesis_do_post_image',8);
-add_action('genesis_entry_content','msd_post_image',8);//add the image above the entry
+//add_action('genesis_entry_content','msd_post_image',8);//add the image above the entry
 
 add_filter( 'excerpt_length', 'msdlab_excerpt_length', 999 );
 add_filter('excerpt_more', 'msdlab_read_more_link');
@@ -155,6 +155,11 @@ add_theme_support( 'genesis-footer-widgets', 1 ); //adds automatic footer widget
 
 remove_action('genesis_footer','genesis_do_footer'); //replace the footer
 add_action('genesis_footer','msdlab_do_social_footer');//with a msdsocial support one
+
+//move the widgets into the footer
+remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
+add_action( 'genesis_footer', 'genesis_footer_widget_areas', 6);
+
 
 /*** SITEMAP ***/
 add_action('after_404','msdlab_sitemap');

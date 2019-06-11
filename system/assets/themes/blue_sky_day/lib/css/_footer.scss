@@ -1,24 +1,13 @@
 /* # Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
-
 .footer-widgets {
+  font-size: 1.8em;
   .footer-widget-area {
-    &.footer-widgets-1 {
-      background-color: rgba($blue,0.8);
-      color: $offwhite;
-    }
-    &.footer-widgets-2 {
-      background-color: $blue;
-      color: $dkgrey;
-      .widget{
-        img {
-          max-height: 85px;
-        }
-      }
-    }
     clear: both;
     padding: 0.5vw 0;
-    font-size: 1.4em;
+    &.footer-widgets-1 {
+      color: $offwhite;
+    }
     .widget {
       text-align: center;
     }
@@ -137,7 +126,7 @@
   font-size: 2.5vw;
   line-height: 1.5;
   text-align: center;
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 .site-footer p {

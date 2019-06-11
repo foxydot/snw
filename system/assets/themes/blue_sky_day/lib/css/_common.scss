@@ -88,14 +88,13 @@
 }
 
 .entry-title {
-  color: $white;
   text-shadow: 0 0 0.5em $dkgrey;
   font-weight: 400;
 }
 
 .entry-title a,
 .sidebar .widget-title a {
-  color: $dkgrey;
+  color: $green;
   text-decoration: none;
 }
 
@@ -107,7 +106,7 @@
 .widget-title {
   @include sansserif(2.4);
   font-weight: 700;
-  color: $orange;
+  color: $blue;
   margin-bottom: 0;
 }
 

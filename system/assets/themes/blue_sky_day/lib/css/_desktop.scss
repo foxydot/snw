@@ -146,18 +146,8 @@
     text-align: right;
   }
 
-  .page-title-area {
-    background: $white;
-    .banner.has-background {
-      .texturize {
-        .gradient {
-          min-height: 400px;
-        }
-      }
-    }
-  }
-
   .page-title-area{
+    background: $white;
     .banner.has-background{
       .wrap{
         .gradient {
@@ -225,7 +215,6 @@
 ---------------------------------------------------------------------------------------------------- */
 
   .footer-widgets {
-    padding-top: 2em;
   }
 
 
