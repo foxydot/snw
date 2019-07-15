@@ -48,8 +48,8 @@ if (!class_exists('MSDLab_Video_Background_Support')) {
     left: 0;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+    min-width: 120%; 
+    min-height: 120%;
     z-index: -1000;
 }
 
