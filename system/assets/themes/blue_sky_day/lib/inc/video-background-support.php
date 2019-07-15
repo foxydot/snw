@@ -36,6 +36,8 @@ if (!class_exists('MSDLab_Video_Background_Support')) {
 
 
         function do_video_background(){
+            if(is_admin()){return;}
+            if(wp_is_mobile()){return;}
             $videosrc = get_stylesheet_directory_uri().'/lib/images/Day-Loop-Final.mp4';
             print '<!-- The video -->
 <video autoplay muted loop id="bkgVideo">
