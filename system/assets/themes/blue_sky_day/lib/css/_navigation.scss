@@ -3,6 +3,8 @@
   .genesis-responsive-menu {
     display: none;
     position: relative;
+    background-color: rgb(50, 95, 165);
+    color: $white;
   }
 
   .genesis-skip-link .skip-link-hidden {
@@ -13,8 +15,8 @@
   .menu-toggle,
   .sub-menu-toggle {
     border-width: 0;
-    background-color: $white;
-    color: $dkgrey;
+    background-color: rgb(50, 95, 165);
+    color: $white;
     display: block;
     margin: 0 auto;
     overflow: hidden;
@@ -26,8 +28,8 @@
   .menu-toggle:hover,
   .sub-menu-toggle:focus,
   .sub-menu-toggle:hover {
-    background: transparent;
-    color: $linkred;
+    background-color: rgb(50, 95, 165);
+    color: $white;
     border-width: 0;
   }
 
@@ -382,6 +384,21 @@
               max-height: 400px;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width:767px) {
+  .nav-primary {
+    .menu{
+      li.menu-item{
+        a{
+          color: $white;
+          font-size: 1em;
+          padding: 0.25em;
         }
       }
     }

@@ -53,7 +53,13 @@ if (!class_exists('MSDLab_Video_Background_Support')) {
     min-width: 120%; 
     min-height: 120%;
     z-index: -1000;
+    background-color: rgb(50, 95, 165);
 }
+$bkgVideo source{
+        position: absolute;
+        top:0;
+        height: 100%;
+    }
 
 </style>';
         }

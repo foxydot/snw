@@ -22,6 +22,12 @@ html {
 /* Chrome fix */
 body {
   @include sansserif(1);
+  background-color: rgb(50, 95, 165);
+  background-image: url(../images/page-bkg.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: $body_txt;
   -webkit-font-smoothing: antialiased;
   line-height: 1.625;

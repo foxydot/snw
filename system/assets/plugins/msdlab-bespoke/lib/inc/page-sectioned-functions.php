@@ -51,7 +51,7 @@ class MSDSectionedPage{
         //ts_data($section);
         global $parallax_ids;
         $eo = ($i+1)%2==0?'even':'odd';
-        $title = apply_filters('the_title',$section['content-area-title']);
+        $title = apply_filters('msdlab_sectioned_page_output_title',$section['content-area-title']);
         $section_name = $section['section-name']!=''?$section['section-name']:$title;
         $slug = sanitize_title_with_dashes(str_replace('/', '-', $section_name));
         $background = '';
@@ -127,7 +127,7 @@ class MSDSectionedPage{
                 $next = 'md';
                 break;
         }
-        $title = apply_filters('the_title',$section['content-area-title']);
+        $title = apply_filters('msdlab_sectioned_page_output_title',$section['content-area-title']);
         $section_name = $section['section-name']!=''?$section['section-name']:$title;
         $slug = sanitize_title_with_dashes(str_replace('/', '-', $section_name));
         $background = '';
