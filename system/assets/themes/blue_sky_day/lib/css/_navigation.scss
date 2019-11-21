@@ -178,10 +178,6 @@
       width: 200px;
       word-wrap: break-word;
     }
-    a::before {
-      content: ">";
-      margin-right: 10px;
-    }
     .sub-menu {
       margin: -56px 0 0 199px;
     }
@@ -295,6 +291,13 @@
         color: $white;
         font-size: 1.6em;
         padding: 0.5em 1em;
+      }
+      .sub-menu{
+        li.menu-item {
+          a {
+            color: $green;
+          }
+        }
       }
     }
   }
