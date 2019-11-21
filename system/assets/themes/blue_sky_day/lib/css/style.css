@@ -925,6 +925,12 @@ img.alignright,
   .site-inner .sidebar .gform_wrapper .gform_body ul li.gfield.white {
     background: none; }
 
+.page .latest-post-selection article {
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.6); }
+  .page .latest-post-selection article a, .page .latest-post-selection article a:visited {
+    color: #172854; }
+
 /* # Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {

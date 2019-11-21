@@ -126,3 +126,16 @@
     }
   }
 }
+
+//lastest posts selection
+.page {
+  .latest-post-selection {
+    article {
+      border: 0;
+      background-color: rgba($white, 0.6);
+      a, a:visited {
+        color: $dkgrey;
+      }
+    }
+  }
+}
