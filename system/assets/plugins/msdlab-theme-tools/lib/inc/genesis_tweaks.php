@@ -14,12 +14,13 @@ class MSDLab_Genesis_Tweaks
         );
 
         $this->options = wp_parse_args($options, $defaults);
-
-        if($this->options[responsive]) {
+error_log('options loaded');
+error_log(json_encode($this->options));
+        if($this->options['responsive']) {
             add_theme_support('genesis-responsive-viewport');//* Add viewport meta tag for mobile browsers
         }
-        if($this->options[preheader]){
-            add_action($this->options[preheader], array(&$this,'msdlab_pre_header'));
+        if($this->options['preheader']){
+            add_action($this->options['preheader'], array(&$this,'msdlab_pre_header'));
             add_action('msdlab_pre_header',array(&$this,'msdlab_pre_header_sidebar'), 15);
             add_action('after_setup_theme',array(&$this,'msdlab_add_preheader_sidebar'), 4);
         }
@@ -32,7 +33,7 @@ class MSDLab_Genesis_Tweaks
      */
     function msdlab_pre_header(){
         print '<div class="pre-header">
-        <div class="wrap">';
+        <div class="wrap container">';
         do_action('msdlab_pre_header');
         print '
         </div>

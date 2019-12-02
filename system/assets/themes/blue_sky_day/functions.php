@@ -80,9 +80,7 @@ if(class_exists('MSDLab_Genesis_Bootstrap')){
     $bootstrappin = new MSDLab_Genesis_Bootstrap($options);
 }
 if(class_exists('MSDLab_Genesis_Tweaks')){
-    $options = array(
-        'preheader' => 'genesis_header_right'
-    );
+    $options = array();
     $gtweaks = new MSDLab_Genesis_Tweaks($options);
 }
 if(class_exists('MSDLab_Subtitle_Support')){
